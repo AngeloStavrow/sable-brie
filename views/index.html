@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="An Unsplash sample app, on Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Random Photo App
+      </h1>
+      <h2>
+        Unsplash API Example
+      </h2>
+    </header>
+
+    <main>
+      <form>
+        <input
+          name="query"
+          type="text"
+          maxlength="200"
+          placeholder="Enter a search query here, or just click the button for something random."
+          aria-labelledby="get-a-photo"
+        /><button type="submit" id="get-a-photo">Fetch me a Photo! 🖼</button>
+      </form>
+
+      <section id="photo"></section>
+    </main>
+
+    <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
